@@ -9,13 +9,13 @@ pipeline{
                     }
                 stage('2-Group Parallel job'){
                     parallel{
-                        stage('Teeto-sub-job-1'){
+                        stage('Titi-sub-job-1'){
                             steps{
                                 sh 'lscpu'
                                 sh 'echo $SHELL'
                             }
                         }
-                        stage('Yomi'){
+                        stage('Baba'){
                             steps{
                             sh 'sudo systemctl status jenkins'
                             }
@@ -29,7 +29,7 @@ pipeline{
                                 sh 'ls'
                             }
                         }
-                        stage('Afeez'){
+                        stage('IyaAfeez'){
                             steps{
                                 sh 'pwd'
                             }
@@ -38,17 +38,17 @@ pipeline{
                 }
                 stage('4-Group Parallel job'){
                     parallel{
-                        stage('Olu'){
+                        stage('Olujimi'){
                             steps{
                                 sh 'lscpu'
                             }
                         }
-                        stage('Tunde'){
+                        stage('Kayode'){
                             steps{
                                 sh 'pwd'
                             }
                         }
-                        stage('Chris'){
+                        stage('Christian'){
                             steps{
                                 sh 'whoami'
                             }
